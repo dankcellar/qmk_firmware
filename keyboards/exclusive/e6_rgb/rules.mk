@@ -1,5 +1,6 @@
 # MCU name
-MCU = atmega32u4
+# MCU = atmega32u4
+MCU = at90usb1286
 
 # Bootloader selection
 #   Teensy       halfkay
@@ -9,7 +10,8 @@ MCU = atmega32u4
 #   QMK DFU      qmk-dfu
 #   ATmega32A    bootloadHID
 #   ATmega328P   USBasp
-BOOTLOADER = atmel-dfu
+# BOOTLOADER = atmel-dfu
+BOOTLOADER = halfkay
 
 # Do not put the microcontroller into power saving mode
 # when we get USB suspend event. We want it to keep updating
