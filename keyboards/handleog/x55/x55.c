@@ -178,8 +178,6 @@ led_config_t g_led_config = { {
     1, 1, 1, 1
 } };
 
-
-
 void matrix_init_kb(void) {
   // put your keyboard start-up code here
   // runs once when the firmware starts up
