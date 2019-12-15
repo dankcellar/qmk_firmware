@@ -137,8 +137,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DRIVER_ADDR_1 0b1010000
 #define DRIVER_ADDR_2 0b1010000 // this is here for compliancy reasons.
 
-#define DRIVER_COUNT 1
-#define DRIVER_1_LED_TOTAL 192
+#define DRIVER_COUNT 2
+#define DRIVER_1_LED_TOTAL 64
 #define DRIVER_LED_TOTAL DRIVER_1_LED_TOTAL
 
 #define RGB_MATRIX_KEYPRESSES
