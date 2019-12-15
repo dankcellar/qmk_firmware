@@ -23,10 +23,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BL] = LAYOUT_x55(/* Base */
                        KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_CAPS, KC_A, KC_S, KC_D, KC_F, KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_LCTL, KC_LGUI, KC_LALT, KC_SPC, MO(_FL)),
     [_FL] = LAYOUT_x55(/* Function */
-                       KC_GRAVE, XXXXXXX, XXXXXXX, XXXXXXX, RESET, XXXXXXX, XXXXXXX, PING, XXXXXXX, XXXXXXX, XXXXXXX, TURNON, XXXXXXX, TURNOFF, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, TO(_FL), XXXXXXX, TG(_FL), XXXXXXX, _______),
+                       KC_GRAVE, XXXXXXX, XXXXXXX, XXXXXXX, RESET, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______),
 };
-
-uint16_t lastPressed;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
