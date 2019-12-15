@@ -27,24 +27,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-    case PING:
-      if (record->event.pressed) {
-        SEND_STRING("ping");
-      } else {
-        SEND_STRING("pong");
-      }
-      break;
-    case TURNOFF:
-      if (record->event.pressed) {
-      } else {
-      }
-      break;
-    case TURNON:
-      if (record->event.pressed) {
-      } else {
-      }
-      break;
   return true;
 }
 
