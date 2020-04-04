@@ -1,6 +1,6 @@
 # MCU name
-MCU = at90usb1286
-#MCU = atmega32u4
+# MCU = at90usb1286
+MCU = atmega32u4
 
 # Bootloader selection
 #   Teensy       halfkay
@@ -15,7 +15,7 @@ BOOTLOADER = halfkay
 # Build Options
 #   change yes to no to disable
 #
-BOOTMAGIC_ENABLE = lite     # Virtual DIP switch configuration
+BOOTMAGIC_ENABLE = full     # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
@@ -30,5 +30,5 @@ UNICODE_ENABLE = no         # Unicode
 BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 AUDIO_ENABLE = no           # Audio output on port C6
 FAUXCLICKY_ENABLE = no      # Use buzzer to emulate clicky switches
-RGB_MATRIX_ENABLE = IS31FL3733     # Use RGB matrix
-NO_USB_STARTUP_CHECK = no          # Disable initialization only when usb is plugged in
+RGB_MATRIX_ENABLE = IS31FL3731		# Use RGB matrix
+NO_USB_STARTUP_CHECK = no     		# Disable initialization only when usb is plugged in
