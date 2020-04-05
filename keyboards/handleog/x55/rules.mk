@@ -10,7 +10,7 @@ MCU = atmega32u4
 #   QMK DFU      qmk-dfu
 #   atmega32a    bootloadHID
 #BOOTLOADER = atmel-dfu
-BOOTLOADER = atmega32a
+BOOTLOADER = halfkay
 
 # Build Options
 #   change yes to no to disable
