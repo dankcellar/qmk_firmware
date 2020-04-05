@@ -15,20 +15,20 @@
  */
 #include QMK_KEYBOARD_H
 
-// enum custom_keycodes {
-//     SHRUG,
-//     DISFACE,
-//     FU,
-//     TFLIP,
-//     TFLIP2,
-//     SAD_EYES,
-//     TPUT,
-//     HAPPYFACE,
-//     HEARTFACE,
-//     CLOUD,
-//     CHANFACE,
-//     CMDCLEAR
-// };
+enum custom_keycodes {
+    SHRUG = SAFE_RANGE,
+    DISFACE,
+    FU,
+    TFLIP,
+    TFLIP2,
+    SAD_EYES,
+    TPUT,
+    HAPPYFACE,
+    HEARTFACE,
+    CLOUD,
+    CHANFACE,
+    CMDCLEAR
+};
 
 // enum custom_keycodes { PING = SAFE_RANGE, TURNOFF, TURNON, H_11, H_12, H_13, H_14, H_15, H_21, H_22, H_23, H_24, H_25, H_31, H_32, H_33, H_34, H_35, H_41, H_42, H_43, H_44, H_45, H_51, H_52, H_53, H_54, H_55 };
 
