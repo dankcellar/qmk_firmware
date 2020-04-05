@@ -1,1 +1,1 @@
-# The default keymap for x55
+# The dev keymap for x55
