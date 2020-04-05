@@ -15,7 +15,7 @@ BOOTLOADER = halfkay
 # Build Options
 #   change yes to no to disable
 #
-BOOTMAGIC_ENABLE = lite     # Virtual DIP switch configuration
+BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = no        # Audio control and System control
 CONSOLE_ENABLE = yes        # Console for debug
