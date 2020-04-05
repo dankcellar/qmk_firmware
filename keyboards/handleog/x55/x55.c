@@ -59,7 +59,7 @@ const is31_led g_is31_leds[DRIVER_LED_TOTAL] = {
     {0, C9_16,  C7_15,  C6_15},
 };
 
-const led_config_t g_led_config = { {
+led_config_t g_led_config = { {
   // Key Matrix to LED Index
     { 0, 1, 2, 3, 4 },
     { 5, 6, 7, 8, 9 },
