@@ -41,10 +41,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL ROW Anode (+), COL Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { A3, A4, A5, A6, A7 }
-#define MATRIX_COL_PINS { C0, C1, C2, C3, C4 }
+#define MATRIX_ROW_PINS { D4, D6, D7, B4, B2 }
+#define MATRIX_COL_PINS { F2, F4, F5, F6, B3 }
 #define UNUSED_PINS
-#define DIODE_DIRECTION COL2ROW
+#define DIODE_DIRECTION ROW2COL
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 // #define DEBOUNCE 6
