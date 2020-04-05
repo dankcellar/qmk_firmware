@@ -43,7 +43,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #define MATRIX_ROW_PINS { D4, D6, D7, B4, B2 }
 #define MATRIX_COL_PINS { F2, F4, F5, F6, B3 }
-#define UNUSED_PINS
 #define DIODE_DIRECTION ROW2COL
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
@@ -127,8 +126,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define WS2812_EXTERNAL_PULLUP
 
 //rgb light setting
-#define RGBLED_NUM      32
-// #define RGB_DI_PIN      B7
+#define RGBLED_NUM 32
+// #define RGB_DI_PIN B7
 // #define RGBLIGHT_ANIMATIONS
 // #define RGBLIGHT_HUE_STEP 8
 // #define RGBLIGHT_SAT_STEP 8
