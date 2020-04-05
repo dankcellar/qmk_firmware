@@ -127,7 +127,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define WS2812_EXTERNAL_PULLUP
 
 //rgb light setting
-// #define RGBLED_NUM      25
+#define RGBLED_NUM      32
 // #define RGB_DI_PIN      B7
 // #define RGBLIGHT_ANIMATIONS
 // #define RGBLIGHT_HUE_STEP 8
