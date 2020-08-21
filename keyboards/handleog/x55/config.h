@@ -134,4 +134,4 @@
 
 #    define DRIVER_ADDR_1 0b1110100
 #    define DRIVER_COUNT 1
-#    define DRIVER_1_LED_TOTAL 32
+#    define DRIVER_LED_TOTAL 25
