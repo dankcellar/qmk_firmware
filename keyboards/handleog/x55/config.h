@@ -133,5 +133,6 @@
 // #endif
 
 #    define DRIVER_ADDR_1 0b1110100
+#    define DRIVER_ADDR_2 0b1110111
 #    define DRIVER_COUNT 1
 #    define DRIVER_LED_TOTAL 32
