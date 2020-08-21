@@ -25,11 +25,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                         KC_LSFT, KC_Z, KC_X, KC_C, KC_V,
                         KC_LCTL, KC_LGUI, KC_LALT, KC_SPC, MO(1)),
     [1] = LAYOUT_X55(/* Function */
-                        CMDCLEAR, XXXXXX, XXXXXX,    XXXXXX,    RESET,
-                        SHRUG,    CLOUD,  HAPPYFACE, HEARTFACE, DISFACE,
-                        TFLIP,    TFLIP2, XXXXXX,    XXXXXX,    XXXXXX,
-                        XXXXXX,   XXXXXX, XXXXXX,    XXXXXX,    XXXXXX,
-                        XXXXXX,   XXXXXX, XXXXXX,    XXXXXX,    ______),
+                        CMDCLEAR,   KC_NO,  KC_NO,      KC_NO,      RESET,
+                        SHRUG,      CLOUD,  HAPPYFACE,  HEARTFACE,  DISFACE,
+                        TFLIP,      TFLIP2, KC_NO,      KC_NO,      KC_NO,
+                        KC_NO,      KC_NO,  KC_NO,      KC_NO,      KC_NO,
+                        KC_NO,      KC_NO,  KC_NO,      KC_NO,      KC_TRANSPARENT);
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
