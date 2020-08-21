@@ -29,12 +29,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                         SHRUG,    CLOUD,  HAPPYFACE, HEARTFACE, DISFACE,
                         TFLIP,    TFLIP2, XXXXXX,    XXXXXX,    XXXXXX,
                         XXXXXX,   XXXXXX, XXXXXX,    XXXXXX,    XXXXXX,
-                        XXXXXX,   XXXXXX, XXXXXX,    XXXXXX,    ______, ),
+                        XXXXXX,   XXXXXX, XXXXXX,    XXXXXX,    ______),
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (record->event.pressed) {
         switch(keycode) {
+            case CMDCLEAR:
+                if (record->event.pressed) {
+                    register_code(KC_LGUI);
+                    tap_code(KC_A);
+                    unregister_code(KC_LGUI);
+                    tap_code(KC_DEL);
+                }
+                return false;
+                break;
             case CLOUD:       // (っ◕‿◕)っ
                 if(record->event.pressed){
                     send_unicode_hex_string("0028 3063 25D5 203F 25D5 0029 3063");
@@ -50,15 +59,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             case HAPPYFACE:       // ʘ‿ʘ
                 if(record->event.pressed){
                      send_unicode_hex_string("0298 203F 0298");
-                }
-                return false;
-                break;
-            case CMDCLEAR:
-                if (record->event.pressed) {
-                    register_code(KC_LGUI);
-                    tap_code(KC_A);
-                    unregister_code(KC_LGUI);
-                    tap_code(KC_DEL);
                 }
                 return false;
                 break;
@@ -97,7 +97,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
-void matrix_init_user(void) {}
+void matrix_init_user(void) {
+  rgbled_init();
+  rgbled_setall(255, 255, 255);
+  rgbled_send();
+}
 
 void matrix_scan_user(void) {}
 
