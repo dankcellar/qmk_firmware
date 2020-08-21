@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                         SHRUG,      CLOUD,  HAPPYFACE,  HEARTFACE,  DISFACE,
                         TFLIP,      TFLIP2, KC_NO,      KC_NO,      KC_NO,
                         KC_NO,      KC_NO,  KC_NO,      KC_NO,      KC_NO,
-                        KC_NO,      KC_NO,  KC_NO,      KC_NO,      KC_TRANSPARENT);
+                        KC_NO,      KC_NO,  KC_NO,      KC_NO,      KC_TRANSPARENT)
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
