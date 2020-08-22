@@ -286,8 +286,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t * record) {
 }
 
 void matrix_init_user(void) {
-    rgb_matrix_enable()
-    rgb_matrix_set_color_all(127, 127, 127)
+    rgb_matrix_enable();
+    rgb_matrix_set_color_all(127, 127, 127);
 }
 
 void matrix_scan_user(void) {}
