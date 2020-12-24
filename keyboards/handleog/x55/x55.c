@@ -59,6 +59,8 @@ const is31_led g_is31_leds[DRIVER_LED_TOTAL] = {
     // {0, C9_16,  C7_15,  C6_15},
 };
 
+// 16 27 28 29 30 31 32 - null
+
 led_config_t g_led_config = { {
   // Key Matrix to LED Index
     { 0, 1, 2, 3, 4 },
@@ -102,5 +104,3 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
 
   return process_record_user(keycode, record);
 }
-
-// 16 27 28 29 30 31 32 - null

@@ -1,8 +1,7 @@
 #include QMK_KEYBOARD_H
 
 enum custom_keycodes {
-    CMDCLEAR = SAFE_RANGE,
-    PING,
+    PING = SAFE_RANGE,
     TURNOFF,
     TURNON,
     H_11,
@@ -30,10 +29,7 @@ enum custom_keycodes {
     H_53,
     H_54,
     H_55
-
 };
-
-// enum custom_keycodes { PING = SAFE_RANGE, TURNOFF, TURNON, H_11, H_12, H_13, H_14, H_15, H_21, H_22, H_23, H_24, H_25, H_31, H_32, H_33, H_34, H_35, H_41, H_42, H_43, H_44, H_45, H_51, H_52, H_53, H_54, H_55 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_X55(/* Base */
@@ -46,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [1] = LAYOUT_X55(/* Function */
         CMDCLEAR,   KC_NO,  RGB_TOG,    KC_NO,  RESET,
         KC_NO,      KC_NO,  KC_NO,      KC_NO,  KC_NO,
-        KC_NO,      KC_NO,  PING,      KC_NO,  KC_NO,
+        KC_NO,      KC_NO,  PING,       KC_NO,  KC_NO,
         KC_NO,      KC_NO,  KC_NO,      KC_NO,  KC_NO,
         KC_NO,      KC_NO,  KC_NO,      KC_NO,  KC_TRANSPARENT),
 
@@ -60,14 +56,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 bool process_record_user(uint16_t keycode, keyrecord_t * record) {
   switch (keycode) {
-  case CMDCLEAR:
-    if (record -> event.pressed) {
-      register_code(KC_LGUI);
-      tap_code(KC_A);
-      unregister_code(KC_LGUI);
-      tap_code(KC_DEL);
-    }
-    break;
   case PING:
     if (record -> event.pressed) {
       SEND_STRING("ping");
@@ -286,8 +274,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t * record) {
 }
 
 void matrix_init_user(void) {
-    rgb_matrix_enable();
-    rgb_matrix_set_color_all(127, 127, 127);
+    rgb_matrix_set_color_all(255, 255, 255);
 }
 
 void matrix_scan_user(void) {}
