@@ -278,5 +278,5 @@ void matrix_init_user(void) {}
 void matrix_scan_user(void) {}
 
 void keyboard_post_init_user(void) {
-    rgb_matrix_set_color_all(255, 255, 255)
+    rgb_matrix_set_color_all(255, 255, 255);
 }
