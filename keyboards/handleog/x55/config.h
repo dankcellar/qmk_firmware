@@ -27,6 +27,8 @@
 #define MATRIX_ROW_PINS { D4, D6, D7, B4, B2 }
 #define MATRIX_COL_PINS { F1, F4, F5, F6, B3 }
 #define DIODE_DIRECTION ROW2COL
+// #define MATRIX_ROW_PINS { D4, D5, D6, D7, B2 }
+// #define MATRIX_COL_PINS { B4, B5, B6, B7, B3 }
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 // #define DEBOUNCE 3
@@ -106,12 +108,12 @@
 #define RGB_MATRIX_LED_PROCESS_LIMIT (DRIVER_LED_TOTAL + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
 #define RGB_MATRIX_LED_FLUSH_LIMIT 16 // limits in milliseconds how frequently an animation will update the LEDs. 16 (16ms) is equivalent to limiting to 60fps (increases keyboard responsiveness)
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200 // limits maximum brightness of LEDs to 200 out of 255. If not defined maximum brightness is set to 255
-#define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_LEFT_RIGHT // Sets the default mode, if none has been set
-#define RGB_MATRIX_STARTUP_HUE 0 // Sets the default hue value, if none has been set
-#define RGB_MATRIX_STARTUP_SAT 255 // Sets the default saturation value, if none has been set
+#define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_PINWHEEL // Sets the default mode, if none has been set
+// #define RGB_MATRIX_STARTUP_HUE 0 // Sets the default hue value, if none has been set
+// #define RGB_MATRIX_STARTUP_SAT 255 // Sets the default saturation value, if none has been set
 #define RGB_MATRIX_STARTUP_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS // Sets the default brightness value, if none has been set
-#define RGB_MATRIX_STARTUP_SPD 127 // Sets the default animation speed, if none has been set
-#define RGB_MATRIX_DISABLE_KEYCODES // disables control of rgb matrix by keycodes (must use code functions to control the feature)
+// #define RGB_MATRIX_STARTUP_SPD 127 // Sets the default animation speed, if none has been set
+// #define RGB_MATRIX_DISABLE_KEYCODES // disables control of rgb matrix by keycodes (must use code functions to control the feature)
 
 // This is a 7-bit address, that gets left-shifted and bit 0
 // set to 0 for write, 1 for read (as per I2C protocol)
@@ -123,8 +125,8 @@
 #define DRIVER_ADDR_1 0b1110100
 #define DRIVER_ADDR_2 0b1110110
 
-#define DRIVER_COUNT 2
-#define DRIVER_1_LED_TOTAL 25
+#define DRIVER_COUNT 1
+#define DRIVER_1_LED_TOTAL 32
 #define DRIVER_2_LED_TOTAL 0
 #define DRIVER_LED_TOTAL (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
 
