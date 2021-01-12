@@ -41,4 +41,4 @@
     { KC_NO,    KC_NO, KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO }, \
 }
 
-#define RGB_MATRIX_CENTER { 114, 30 }
+#define RGB_MATRIX_CENTER { 114, 24 }
