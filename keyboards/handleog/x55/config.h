@@ -24,8 +24,8 @@
  *                  ROW2COL ROW Anode (+), COL Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { D4, D6, D7, B4, B2, A0 }
-#define MATRIX_COL_PINS { F1, F4, F5, F6, B3, A1, A2 }
+#define MATRIX_ROW_PINS { D4, D6, D7, B4, B2, D0 }
+#define MATRIX_COL_PINS { F1, F4, F5, F6, B3, D1, D2 }
 #define DIODE_DIRECTION ROW2COL
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
