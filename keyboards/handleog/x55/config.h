@@ -25,10 +25,8 @@
  *
  */
 #define MATRIX_ROW_PINS { D4, D6, D7, B4, B2 }
-#define MATRIX_COL_PINS { F1, F4, F5, F6, B3 }
+#define MATRIX_COL_PINS { F1, F4, F5, F6, B3, B4, B5 }
 #define DIODE_DIRECTION ROW2COL
-// #define MATRIX_ROW_PINS { D4, D5, D6, D7, B2 }
-// #define MATRIX_COL_PINS { B4, B5, B6, B7, B3 }
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 // #define DEBOUNCE 3
