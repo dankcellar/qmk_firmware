@@ -16,12 +16,12 @@ MCU = atmega32u4
 BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = no       	# Mouse keys
 EXTRAKEY_ENABLE = no        # Audio control and System control
-CONSOLE_ENABLE = no        # Console for debug
-COMMAND_ENABLE = no        # Commands for debug and configuration
+CONSOLE_ENABLE = yes        # Console for debug
+COMMAND_ENABLE = yes        # Commands for debug and configuration
 # if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
 NKRO_ENABLE = no          	# USB Nkey Rollover
 MIDI_ENABLE = no            # MIDI support
-UNICODE_ENABLE = yes        # Unicode
+UNICODE_ENABLE = no	        # Unicode
 BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 
 RGBLIGHT_ENABLE = no
