@@ -8,11 +8,10 @@ MCU = atmega32u4
 #   LUFA DFU     lufa-dfu
 #   QMK DFU      qmk-dfu
 #   atmega32a    bootloadHID
-BOOTLOADER = atmel-dfu
+BOOTLOADER = qmk-dfu
 
 # Build Options
 #   change yes to no to disable
-#
 BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = no       	# Mouse keys
 EXTRAKEY_ENABLE = no        # Audio control and System control
