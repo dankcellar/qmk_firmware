@@ -271,13 +271,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t * record) {
     //   }
     //   break;
   }
-  return true;
+  return false;
 }
 
 void matrix_init_user(void) {}
 
 void matrix_scan_user(void) {}
 
-void keyboard_post_init_user(void) {
-    // rgb_matrix_set_color_all(255, 255, 255);
-}
+void keyboard_post_init_user(void) {}
