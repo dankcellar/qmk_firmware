@@ -16,12 +16,12 @@
 #include "x55.h"
 
 // const is31_led g_is31_leds[DRIVER_LED_TOTAL] = {
-// /* Refer to IS31 manual for these locations
-//  *   driver
-//  *   |  R location
-//  *   |  |       G location
-//  *   |  |       |       B location
-//  *   |  |       |       | */
+/* Refer to IS31 manual for these locations
+ *   driver
+ *   |  R location
+ *   |  |       G location
+ *   |  |       |       B location
+ *   |  |       |       | */
 //     {0, C1_1,   C3_2,   C4_2},
 //     {0, C1_2,   C2_2,   C4_3},
 //     {0, C1_3,   C2_3,   C3_3},
