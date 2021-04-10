@@ -102,33 +102,32 @@
 /* override number of MIDI tone keycodes (each octave adds 12 keycodes and allocates 12 bytes) */
 // #define MIDI_TONE_KEYCODE_OCTAVES 1
 
-#define RGB_MATRIX_KEYPRESSES // reacts to keypresses
-#define RGB_MATRIX_KEYRELEASES // reacts to keyreleases (instead of keypresses)
-#define RGB_DISABLE_TIMEOUT 0 // number of milliseconds to wait until rgb automatically turns off
-#define RGB_DISABLE_AFTER_TIMEOUT 0 // OBSOLETE: number of ticks to wait until disabling effects
-#define RGB_DISABLE_WHEN_USB_SUSPENDED false // turn off effects when suspended
-#define RGB_MATRIX_LED_PROCESS_LIMIT (DRIVER_LED_TOTAL + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
-#define RGB_MATRIX_LED_FLUSH_LIMIT 16 // limits in milliseconds how frequently an animation will update the LEDs. 16 (16ms) is equivalent to limiting to 60fps (increases keyboard responsiveness)
-#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200 // limits maximum brightness of LEDs to 200 out of 255. If not defined maximum brightness is set to 255
-#define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_PINWHEEL // Sets the default mode, if none has been set
-// #define RGB_MATRIX_STARTUP_HUE 0 // Sets the default hue value, if none has been set
-// #define RGB_MATRIX_STARTUP_SAT 255 // Sets the default saturation value, if none has been set
-#define RGB_MATRIX_STARTUP_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS // Sets the default brightness value, if none has been set
-// #define RGB_MATRIX_STARTUP_SPD 127 // Sets the default animation speed, if none has been set
-// #define RGB_MATRIX_DISABLE_KEYCODES // disables control of rgb matrix by keycodes (must use code functions to control the feature)
+// #define RGB_MATRIX_KEYPRESSES // reacts to keypresses
+// #define RGB_MATRIX_KEYRELEASES // reacts to keyreleases (instead of keypresses)
+// #define RGB_DISABLE_TIMEOUT 0 // number of milliseconds to wait until rgb automatically turns off
+// #define RGB_DISABLE_AFTER_TIMEOUT 0 // OBSOLETE: number of ticks to wait until disabling effects
+// #define RGB_DISABLE_WHEN_USB_SUSPENDED false // turn off effects when suspended
+// #define RGB_MATRIX_LED_PROCESS_LIMIT (DRIVER_LED_TOTAL + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
+// #define RGB_MATRIX_LED_FLUSH_LIMIT 16 // limits in milliseconds how frequently an animation will update the LEDs. 16 (16ms) is equivalent to limiting to 60fps (increases keyboard responsiveness)
+// #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200 // limits maximum brightness of LEDs to 200 out of 255. If not defined maximum brightness is set to 255
+// #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_PINWHEEL // Sets the default mode, if none has been set
+// // #define RGB_MATRIX_STARTUP_HUE 0 // Sets the default hue value, if none has been set
+// // #define RGB_MATRIX_STARTUP_SAT 255 // Sets the default saturation value, if none has been set
+// #define RGB_MATRIX_STARTUP_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS // Sets the default brightness value, if none has been set
+// // #define RGB_MATRIX_STARTUP_SPD 127 // Sets the default animation speed, if none has been set
+// // #define RGB_MATRIX_DISABLE_KEYCODES // disables control of rgb matrix by keycodes (must use code functions to control the feature)
 
-// This is a 7-bit address, that gets left-shifted and bit 0
-// set to 0 for write, 1 for read (as per I2C protocol)
-// The address will vary depending on your wiring:
-// 0b1110100 AD <-> GND
-// 0b1110111 AD <-> VCC
-// 0b1110101 AD <-> SCL
-// 0b1110110 AD <-> SDA
-#define DRIVER_ADDR_1 0b1110100
-#define DRIVER_ADDR_2 0b1110110
+// // This is a 7-bit address, that gets left-shifted and bit 0
+// // set to 0 for write, 1 for read (as per I2C protocol)
+// // The address will vary depending on your wiring:
+// // 0b1110100 AD <-> GND
+// // 0b1110111 AD <-> VCC
+// // 0b1110101 AD <-> SCL
+// // 0b1110110 AD <-> SDA
+// #define DRIVER_ADDR_1 0b1110100
+// #define DRIVER_ADDR_2 0b1110110
 
-#define DRIVER_COUNT 1
-#define DRIVER_1_LED_TOTAL 32
-#define DRIVER_2_LED_TOTAL 0
-#define DRIVER_LED_TOTAL (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
-
+// #define DRIVER_COUNT 1
+// #define DRIVER_1_LED_TOTAL 32
+// #define DRIVER_2_LED_TOTAL 0
+// #define DRIVER_LED_TOTAL (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
