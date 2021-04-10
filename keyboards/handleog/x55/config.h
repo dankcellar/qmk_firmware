@@ -11,8 +11,10 @@
 #define DESCRIPTION A 5x5 custom keyboard
 
 /* key matrix size */
-#define MATRIX_ROWS 6
-#define MATRIX_COLS 7
+// #define MATRIX_ROWS 6
+// #define MATRIX_COLS 7
+#define MATRIX_ROWS 5
+#define MATRIX_COLS 5
 
 /*
  * Keyboard Matrix Assignments
@@ -24,9 +26,11 @@
  *                  ROW2COL ROW Anode (+), COL Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { D4, D6, D7, B4, B2, E6 } // E6 dead
-#define MATRIX_COL_PINS { C6, F1, F4, F5, F6, B3, C7 } // C6 and C7 dead
-#define DIODE_DIRECTION COL2ROW
+// #define MATRIX_ROW_PINS { D4, D6, D7, B4, B2, E6 } // E6 dead
+// #define MATRIX_COL_PINS { C6, F1, F4, F5, F6, B3, C7 } // C6 and C7 dead
+#define MATRIX_ROW_PINS { D4, D6, D7, B4, B2 } // E6 dead
+#define MATRIX_COL_PINS { F1, F4, F5, F6, B3 } // C6 and C7 dead
+#define DIODE_DIRECTION ROW2COL
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 // #define DEBOUNCE 3

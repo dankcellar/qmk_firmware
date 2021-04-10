@@ -1,2 +1,2 @@
 # HandleOG
-x55 keypad
+5x5 gamer pad
