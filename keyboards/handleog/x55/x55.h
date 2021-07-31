@@ -18,7 +18,7 @@
 #include "quantum.h"
 #include "analog.h"
 #include "print.h"
-#include "stdio.h"
+#include <stdio.h>
 
 /* This a shortcut to help you visually see your layout.
  *
