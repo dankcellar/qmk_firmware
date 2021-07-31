@@ -11,7 +11,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [1] = LAYOUT_X55(RGB_MOD, RGB_M_P, RGB_TOG, XXXXXXX, XXXXXXX, RGB_HUD, RGB_HUI, XXXXXXX, XXXXXXX, XXXXXXX, RGB_SAD, RGB_SAI, XXXXXXX, XXXXXXX, XXXXXXX, RGB_VAD, RGB_VAI, XXXXXXX, XXXXXXX, XXXXXXX, RESET, PING, XXXXXXX, XXXXXXX, _______)};
 
 bool process_record_user(uint16_t keycode, keyrecord_t* record) {
-    print("event");
+#ifdef CONSOLE_ENABLE
+    uprintf("KL: kc: 0x%04X, col: %u, row: %u, pressed: %b, time: %u, interrupt: %b, count: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
+#endif
     switch (keycode) {
         case PING:
             if (record->event.pressed) {
@@ -122,7 +124,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
             return false;
         case H_51:
             if (record->event.pressed) {
-                print("R1C3");
+                print("H_51");
             }
             return false;
         case H_52:
