@@ -30,4 +30,4 @@ UNICODE_ENABLE = no         # Unicode
 RGB_MATRIX_ENABLE = yes
 RGB_MATRIX_DRIVER = IS31FL3731
 
-# SRC += analog.c
+SRC += analog.c
