@@ -25,16 +25,13 @@
  *
  */
 // Analog
-// D6, D7, B4
-// F1, F4, F5
-// #define MATRIX_ROW_PINS { D4, D6, D7, B4, B2, E6 } // E6 dead
-// #define MATRIX_COL_PINS { C6, F1, F4, F5, F6, B3, C7 } // C6 and C7 dead
-#define MATRIX_ROW_PINS { D4, D6, D7, B4, B2 } // E6 dead
-#define MATRIX_COL_PINS { F1, F4, F5, F6, B3 } // C6 and C7 dead
+// F0, F1, F4, F5
+#define MATRIX_ROW_PINS { D4, D5, D6, D7, B2 }
+#define MATRIX_COL_PINS { B4, B5, B6, B7, B3 }
 #define DIODE_DIRECTION ROW2COL
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 3
+#define DEBOUNCE 0
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 // #define LOCKING_SUPPORT_ENABLE

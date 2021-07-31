@@ -16,7 +16,7 @@
 #pragma once
 
 #include "quantum.h"
-// #include "analog.h"
+#include "analog.h"
 #include "print.h"
 
 /* This a shortcut to help you visually see your layout.
