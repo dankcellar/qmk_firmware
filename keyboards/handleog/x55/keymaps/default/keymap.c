@@ -18,14 +18,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
             }
             return false;
             break;
-            case PING:
-            if (record->event.pressed) {
-                SEND_STRING("ping");
-            } else {
-                SEND_STRING("pong");
-            }
-            return false;
-            break;
         /** Custom keycode macros */
         case H_11:
             if (record->event.pressed) {
