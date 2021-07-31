@@ -37,4 +37,4 @@
         {k40, k41, k42, k43, k44}, \
     }
 
-#define RGB_MATRIX_CENTER { 114, 24 }
+// #define RGB_MATRIX_CENTER { 114, 24 }
