@@ -16,6 +16,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
             } else {
                 SEND_STRING("pong");
             }
+            return false;
+            break;
+            case PING:
+            if (record->event.pressed) {
+                SEND_STRING("ping");
+            } else {
+                SEND_STRING("pong");
+            }
+            return false;
             break;
         /** Custom keycode macros */
         case H_11:
@@ -119,7 +128,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
             }
             break;
     }
-    return true;
+    return false;
 }
 
 void matrix_init_user(void) {}
