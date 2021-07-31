@@ -61,25 +61,28 @@ const is31_led g_is31_leds[DRIVER_LED_TOTAL] = {
 
 led_config_t g_led_config = { {
     // Key Matrix to LED Index
-    {  0,  1,  2,  3,  4,  },
-    {  5,  6,  7,  8,  9,  },
-    {  10, 11, 12, 13, 14, },
-    {  15, 16, 17, 18, 19, },
-    {  20, 21, 22, 23, 24, }
+    { NO_LED, 0,  1,  2,  3,  4,  NO_LED },
+    { NO_LED, 5,  6,  7,  8,  9,  NO_LED },
+    { NO_LED, 10, 11, 12, 13, 14, NO_LED },
+    { NO_LED, 15, 16, 17, 18, 19, NO_LED },
+    { NO_LED, 20, 21, 22, 23, 24, NO_LED },
+    { 25,     26, 27, 28, 29, 30,     31 }
 }, {
     // LED Index to Physical Position
     {38,0},  {76,0},  {114,0},  {152,0},  {190,0},
     {38,12}, {76,12}, {114,12}, {152,12}, {190,12},
     {38,24}, {76,24}, {114,24}, {152,24}, {190,24},
     {38,36}, {76,36}, {114,36}, {152,36}, {190,36},
-    {38,48}, {76,48}, {114,48}, {152,48}, {190,48}
+    {38,48}, {76,48}, {114,48}, {152,48}, {190,48},
+    {0,60},  {38,60}, {76,60},  {114,60}, {152,60}, {190,60}, {228,60}
 }, {
     // LED Index to Flag
     4, 4, 4, 4, 4,
     4, 4, 4, 4, 4,
     4, 4, 4, 4, 4,
     4, 4, 4, 4, 4,
-    4, 4, 4, 4, 4
+    4, 4, 4, 4, 4,
+    2, 2, 2, 2, 2, 2, 2
 } };
 
 void matrix_init_kb(void) {
@@ -106,7 +109,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
 void keyboard_post_init_user(void) {
   // Customise these values to desired behaviour
   debug_enable=true;
-  //debug_matrix=true;
+  debug_matrix=true;
   //debug_keyboard=true;
   //debug_mouse=true;
 }
