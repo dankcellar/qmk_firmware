@@ -8,16 +8,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
 #ifdef CONSOLE_ENABLE
     // uprintf("KL: kc: 0x%04X, col: %u, row: %u, pressed: %b, time: %u, interrupt: %b, count: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
 
-    int16_t f0 = analogReadPin(F0);
-    int16_t f1 = analogReadPin(F1);
-    int16_t f4 = analogReadPin(F4);
-    int16_t f5 = analogReadPin(F5);
+    // int16_t f0 = analogReadPin(F0);
+    // int16_t f1 = analogReadPin(F1);
+    // int16_t f4 = analogReadPin(F4);
+    // int16_t f5 = analogReadPin(F5);
 
-    char buffer[50];
-    sprintf(buffer, "ADC:%u\n", f0);
-    sprintf(buffer, "ADC:%u\n", f1);
-    sprintf(buffer, "ADC:%u\n", f4);
-    sprintf(buffer, "ADC:%u\n", f5);
+    // char buffer[50];
+    // sprintf(buffer, "ADC:%u\n", f0);
+    // sprintf(buffer, "ADC:%u\n", f1);
+    // sprintf(buffer, "ADC:%u\n", f4);
+    // sprintf(buffer, "ADC:%u\n", f5);
 #endif
 
     switch (keycode) {
