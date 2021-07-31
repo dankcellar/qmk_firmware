@@ -11,138 +11,138 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [1] = LAYOUT_X55(RGB_MOD, RGB_M_P, RGB_TOG, XXXXXXX, XXXXXXX, RGB_HUD, RGB_HUI, XXXXXXX, XXXXXXX, XXXXXXX, RGB_SAD, RGB_SAI, XXXXXXX, XXXXXXX, XXXXXXX, RGB_VAD, RGB_VAI, XXXXXXX, XXXXXXX, XXXXXXX, RESET, PING, XXXXXXX, XXXXXXX, _______)};
 
 bool process_record_user(uint16_t keycode, keyrecord_t* record) {
-    SEND_STRING("event");
+    print("event");
     switch (keycode) {
         case PING:
             if (record->event.pressed) {
-                SEND_STRING("ping");
+                print("ping");
             } else {
-                SEND_STRING("pong");
+                print("pong");
             }
             return false;
         case H_11:
             if (record->event.pressed) {
-                SEND_STRING("H_11");
+                print("H_11");
             }
             return false;
         case H_12:
             if (record->event.pressed) {
-                SEND_STRING("H_12");
+                print("H_12");
             }
             return false;
         case H_13:
             if (record->event.pressed) {
-                SEND_STRING("H_13");
+                print("H_13");
             }
             return false;
         case H_14:
             if (record->event.pressed) {
-                SEND_STRING("H_14");
+                print("H_14");
             }
             return false;
         case H_15:
             if (record->event.pressed) {
-                SEND_STRING("H_15");
+                print("H_15");
             }
             return false;
         case H_21:
             if (record->event.pressed) {
-                SEND_STRING("H_21");
+                print("H_21");
             }
             return false;
         case H_22:
             if (record->event.pressed) {
-                SEND_STRING("H_22");
+                print("H_22");
             }
             return false;
         case H_23:
             if (record->event.pressed) {
-                SEND_STRING("H_23");
+                print("H_23");
             }
             return false;
         case H_24:
             if (record->event.pressed) {
-                SEND_STRING("H_24");
+                print("H_24");
             }
             return false;
         case H_25:
             if (record->event.pressed) {
-                SEND_STRING("H_25");
+                print("H_25");
             }
             return false;
         case H_31:
             if (record->event.pressed) {
-                SEND_STRING("H_31");
+                print("H_31");
             }
             return false;
         case H_32:
             if (record->event.pressed) {
-                SEND_STRING("H_32");
+                print("H_32");
             }
             return false;
         case H_33:
             if (record->event.pressed) {
-                SEND_STRING("H_33");
+                print("H_33");
             }
             return false;
         case H_34:
             if (record->event.pressed) {
-                SEND_STRING("H_34");
+                print("H_34");
             }
             return false;
         case H_35:
             if (record->event.pressed) {
-                SEND_STRING("H_35");
+                print("H_35");
             }
             return false;
         case H_41:
             if (record->event.pressed) {
-                SEND_STRING("H_41");
+                print("H_41");
             }
             return false;
         case H_42:
             if (record->event.pressed) {
-                SEND_STRING("H_42");
+                print("H_42");
             }
             return false;
         case H_43:
             if (record->event.pressed) {
-                SEND_STRING("H_43");
+                print("H_43");
             }
             return false;
         case H_44:
             if (record->event.pressed) {
-                SEND_STRING("H_44");
+                print("H_44");
             }
             return false;
         case H_45:
             if (record->event.pressed) {
-                SEND_STRING("H_45");
+                print("H_45");
             }
             return false;
         case H_51:
             if (record->event.pressed) {
-                SEND_STRING("R1C3");
+                print("R1C3");
             }
             return false;
         case H_52:
             if (record->event.pressed) {
-                SEND_STRING("H_52");
+                print("H_52");
             }
             return false;
         case H_53:
             if (record->event.pressed) {
-                SEND_STRING("H_53");
+                print("H_53");
             }
             return false;
         case H_54:
             if (record->event.pressed) {
-                SEND_STRING("H_54");
+                print("H_54");
             }
             return false;
         case H_55:
             if (record->event.pressed) {
-                SEND_STRING("H_55");
+                print("H_55");
             }
             return false;
         default:
