@@ -27,7 +27,9 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality on B7 by d
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 UNICODE_ENABLE = no         # Unicode
 
+CUSTOM_MATRIX = lite
 RGB_MATRIX_ENABLE = yes
 RGB_MATRIX_DRIVER = IS31FL3731
 
 SRC += analog.c
+SRC += matrix.c
