@@ -17,212 +17,107 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
                 SEND_STRING("pong");
             }
             break;
-            /** Custom keycode macros */
-            // case H_11:
-            //   if (record -> event.pressed) {
-            //     if (lastPressed == KC_E) {
-            //       // SEND_STRING(SS_TAP(TO(_FL)));
-            //     } else {
-            //       // MEH_T(KC_A);
-            //       lastPressed = KC_A;
-            //     }
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_12:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_B);
-            //     lastPressed = KC_B;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_13:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_C);
-            //     lastPressed = KC_C;
-            //   } else {}
-            //   break;
-            // case H_14:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_D);
-            //     lastPressed = KC_D;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_15:
-            //   if (record -> event.pressed) {
-            //     if (lastPressed == KC_E) {
-            //       // SEND_STRING(SS_TAP(TO(_FL)));
-            //     }
-            //     // MEH_T(KC_E);
-            //     lastPressed = KC_E;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_21:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_F);
-            //     lastPressed = KC_F;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_22:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_G);
-            //     lastPressed = KC_G;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_23:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_H);
-            //     lastPressed = KC_H;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_24:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_I);
-            //     lastPressed = KC_I;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_25:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_J);
-            //     lastPressed = KC_J;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_31:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_K);
-            //     lastPressed = KC_K;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_32:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_L);
-            //     lastPressed = KC_L;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_33:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_M);
-            //     lastPressed = KC_M;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_34:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_N);
-            //     lastPressed = KC_N;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_35:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_O);
-            //     lastPressed = KC_O;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_41:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_P);
-            //     lastPressed = KC_P;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_42:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_Q);
-            //     lastPressed = KC_Q;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_43:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_R);
-            //     lastPressed = KC_R;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_44:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_S);
-            //     lastPressed = KC_S;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_45:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_T);
-            //     lastPressed = KC_T;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_51:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_U);
-            //     lastPressed = KC_U;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_52:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_V);
-            //     lastPressed = KC_V;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_53:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_W);
-            //     lastPressed = KC_W;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_54:
-            //   if (record -> event.pressed) {
-            //     // MEH_T(KC_X);
-            //     lastPressed = KC_X;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
-            // case H_55:
-            //   if (record -> event.pressed) {
-            //     if (lastPressed) // MEH_T(KC_Y);
-            //       lastPressed = KC_Y;
-            //   } else {
-            //     lastPressed = KC_Z;
-            //   }
-            //   break;
+        /** Custom keycode macros */
+        case H_11:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_12:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_13:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_14:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_15:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_21:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_22:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_23:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_24:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_25:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_31:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_32:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_33:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_34:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_35:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_41:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_42:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_43:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_44:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_45:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_51:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_52:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_53:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_54:
+            if (record->event.pressed) {
+            }
+            break;
+        case H_55:
+            if (record->event.pressed) {
+            }
+            break;
     }
     return true;
 }
