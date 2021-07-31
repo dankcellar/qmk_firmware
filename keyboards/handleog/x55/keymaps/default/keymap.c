@@ -11,149 +11,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [1] = LAYOUT_X55(RGB_MOD, RGB_M_P, RGB_TOG, XXXXXXX, XXXXXXX, RGB_HUD, RGB_HUI, XXXXXXX, XXXXXXX, XXXXXXX, RGB_SAD, RGB_SAI, XXXXXXX, XXXXXXX, XXXXXXX, RGB_VAD, RGB_VAI, XXXXXXX, XXXXXXX, XXXXXXX, RESET, PING, XXXXXXX, XXXXXXX, _______)};
 
 bool process_record_user(uint16_t keycode, keyrecord_t* record) {
-// #ifdef CONSOLE_ENABLE
-//     udo_somethingf("KL: kc: 0x%04X, col: %u, row: %u, pressed: %b, time: %u, interrupt: %b, count: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
-// #endif
-    switch (keycode) {
-        case PING:
-            if (record->event.pressed) {
-                do_something("ping");
-            } else {
-                do_something("pong");
-            }
-            return false;
-        case H_11:
-            if (record->event.pressed) {
-                do_something("H_11");
-            }
-            return false;
-        case H_12:
-            if (record->event.pressed) {
-                do_something("H_12");
-            }
-            return false;
-        case H_13:
-            if (record->event.pressed) {
-                do_something("H_13");
-            }
-            return false;
-        case H_14:
-            if (record->event.pressed) {
-                do_something("H_14");
-            }
-            return false;
-        case H_15:
-            if (record->event.pressed) {
-                do_something("H_15");
-            }
-            return false;
-        case H_21:
-            if (record->event.pressed) {
-                do_something("H_21");
-            }
-            return false;
-        case H_22:
-            if (record->event.pressed) {
-                do_something("H_22");
-            }
-            return false;
-        case H_23:
-            if (record->event.pressed) {
-                do_something("H_23");
-            }
-            return false;
-        case H_24:
-            if (record->event.pressed) {
-                do_something("H_24");
-            }
-            return false;
-        case H_25:
-            if (record->event.pressed) {
-                do_something("H_25");
-            }
-            return false;
-        case H_31:
-            if (record->event.pressed) {
-                do_something("H_31");
-            }
-            return false;
-        case H_32:
-            if (record->event.pressed) {
-                do_something("H_32");
-            }
-            return false;
-        case H_33:
-            if (record->event.pressed) {
-                do_something("H_33");
-            }
-            return false;
-        case H_34:
-            if (record->event.pressed) {
-                do_something("H_34");
-            }
-            return false;
-        case H_35:
-            if (record->event.pressed) {
-                do_something("H_35");
-            }
-            return false;
-        case H_41:
-            if (record->event.pressed) {
-                do_something("H_41");
-            }
-            return false;
-        case H_42:
-            if (record->event.pressed) {
-                do_something("H_42");
-            }
-            return false;
-        case H_43:
-            if (record->event.pressed) {
-                do_something("H_43");
-            }
-            return false;
-        case H_44:
-            if (record->event.pressed) {
-                do_something("H_44");
-            }
-            return false;
-        case H_45:
-            if (record->event.pressed) {
-                do_something("H_45");
-            }
-            return false;
-        case H_51:
-            if (record->event.pressed) {
-                do_something("H_51");
-            }
-            return false;
-        case H_52:
-            if (record->event.pressed) {
-                do_something("H_52");
-            }
-            return false;
-        case H_53:
-            if (record->event.pressed) {
-                do_something("H_53");
-            }
-            return false;
-        case H_54:
-            if (record->event.pressed) {
-                do_something("H_54");
-            }
-            return false;
-        case H_55:
-            if (record->event.pressed) {
-                do_something("H_55");
-            }
-            return false;
-        default:
-            return true;
-    }
-}
+#ifdef CONSOLE_ENABLE
+    //uprintf("KL: kc: 0x%04X, col: %u, row: %u, pressed: %b, time: %u, interrupt: %b, count: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed, record->event.time, record->tap.interrupted, record->tap.count);
 
-void do_something(char str[]){
-    print(str);
     int16_t f0 = analogReadPin(F0);
     int16_t f1 = analogReadPin(F1);
     int16_t f4 = analogReadPin(F4);
@@ -164,6 +24,144 @@ void do_something(char str[]){
     sprintf(buffer, "ADC:%u\n", f1);
     sprintf(buffer, "ADC:%u\n", f4);
     sprintf(buffer, "ADC:%u\n", f5);
+#endif
+
+    switch (keycode) {
+        case PING:
+            if (record->event.pressed) {
+                print("ping");
+            } else {
+                print("pong");
+            }
+            return false;
+        case H_11:
+            if (record->event.pressed) {
+                print("H_11");
+            }
+            return false;
+        case H_12:
+            if (record->event.pressed) {
+                print("H_12");
+            }
+            return false;
+        case H_13:
+            if (record->event.pressed) {
+                print("H_13");
+            }
+            return false;
+        case H_14:
+            if (record->event.pressed) {
+                print("H_14");
+            }
+            return false;
+        case H_15:
+            if (record->event.pressed) {
+                print("H_15");
+            }
+            return false;
+        case H_21:
+            if (record->event.pressed) {
+                print("H_21");
+            }
+            return false;
+        case H_22:
+            if (record->event.pressed) {
+                print("H_22");
+            }
+            return false;
+        case H_23:
+            if (record->event.pressed) {
+                print("H_23");
+            }
+            return false;
+        case H_24:
+            if (record->event.pressed) {
+                print("H_24");
+            }
+            return false;
+        case H_25:
+            if (record->event.pressed) {
+                print("H_25");
+            }
+            return false;
+        case H_31:
+            if (record->event.pressed) {
+                print("H_31");
+            }
+            return false;
+        case H_32:
+            if (record->event.pressed) {
+                print("H_32");
+            }
+            return false;
+        case H_33:
+            if (record->event.pressed) {
+                print("H_33");
+            }
+            return false;
+        case H_34:
+            if (record->event.pressed) {
+                print("H_34");
+            }
+            return false;
+        case H_35:
+            if (record->event.pressed) {
+                print("H_35");
+            }
+            return false;
+        case H_41:
+            if (record->event.pressed) {
+                print("H_41");
+            }
+            return false;
+        case H_42:
+            if (record->event.pressed) {
+                print("H_42");
+            }
+            return false;
+        case H_43:
+            if (record->event.pressed) {
+                print("H_43");
+            }
+            return false;
+        case H_44:
+            if (record->event.pressed) {
+                print("H_44");
+            }
+            return false;
+        case H_45:
+            if (record->event.pressed) {
+                print("H_45");
+            }
+            return false;
+        case H_51:
+            if (record->event.pressed) {
+                print("H_51");
+            }
+            return false;
+        case H_52:
+            if (record->event.pressed) {
+                print("H_52");
+            }
+            return false;
+        case H_53:
+            if (record->event.pressed) {
+                print("H_53");
+            }
+            return false;
+        case H_54:
+            if (record->event.pressed) {
+                print("H_54");
+            }
+            return false;
+        case H_55:
+            if (record->event.pressed) {
+                print("H_55");
+            }
+            return false;
+        default:
+            return true;
+    }
 }
 
 void matrix_init_user(void) {}
