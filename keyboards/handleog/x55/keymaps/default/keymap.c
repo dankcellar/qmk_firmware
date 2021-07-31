@@ -153,11 +153,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
 }
 
 void do_something(char str[]){
-    print(str)
-    int16_t f0 = analogReadPin(F0)
-    int16_t f1 = analogReadPin(F1)
-    int16_t f4 = analogReadPin(F4)
-    int16_t f5 = analogReadPin(F5)
+    print(str);
+    int16_t f0 = analogReadPin(F0);
+    int16_t f1 = analogReadPin(F1);
+    int16_t f4 = analogReadPin(F4);
+    int16_t f5 = analogReadPin(F5);
 
     // char buffer[50];
     // sprintf(buffer, "ADC:%u\n", f0);
