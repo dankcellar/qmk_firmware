@@ -1,3 +1,5 @@
+#include "matrix.h"
+
 void matrix_init_custom(void) {
     // TODO: initialize hardware here
 }
