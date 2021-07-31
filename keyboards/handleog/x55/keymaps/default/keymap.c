@@ -159,11 +159,11 @@ void do_something(char str[]){
     int16_t f4 = analogReadPin(F4);
     int16_t f5 = analogReadPin(F5);
 
-    // char buffer[50];
-    // sprintf(buffer, "ADC:%u\n", f0);
-    // sprintf(buffer, "ADC:%u\n", f1);
-    // sprintf(buffer, "ADC:%u\n", f4);
-    // sprintf(buffer, "ADC:%u\n", f5);
+    char buffer[50];
+    sprintf(buffer, "ADC:%u\n", f0);
+    sprintf(buffer, "ADC:%u\n", f1);
+    sprintf(buffer, "ADC:%u\n", f4);
+    sprintf(buffer, "ADC:%u\n", f5);
 }
 
 void matrix_init_user(void) {}
